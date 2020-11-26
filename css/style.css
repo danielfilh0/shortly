@@ -3,9 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none; }
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif; }
 
-body {
-  background-color: #2A2341; }
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 3%;
+  border: 1px solid black; }
+
+header .menu-desktop, header .area-logo, header .links-info, header .links-user {
+  display: flex; }
+header .menu-desktop {
+  justify-content: space-between; }
+header .menu-mobile {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

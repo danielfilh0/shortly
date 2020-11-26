@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 $color-primary: #2DD0CF;
@@ -12,7 +13,24 @@ $color-text: #232027;
 $color-support-1: #F0F1F6;
 $color-support-2: #ACACAE;
 
-body {
-  background-color: $color-secondary;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 3%;
+  border: 1px solid black;
 }
+
+header {
+  .menu-desktop, .area-logo, .links-info, .links-user {
+    display: flex;
+  }
+  .menu-desktop {
+    justify-content: space-between;
+  }
+  .menu-mobile {
+    display: none;
+  }
+}
+
 

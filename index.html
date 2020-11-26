@@ -4,18 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shortly - URL shortening</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <div class="logo"><img src="images/logo.svg" alt="Shortly"></div>
       <nav class="menu-desktop"> <!-- menu-desktop -->
-        <ul class="links-info">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#resources">Resources</a></li>
-        </ul>
+        <div class="area-logo">
+          <img src="images/logo.svg" alt="Shortly">
+          <ul class="links-info">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </div> <!-- area-logo -->
         <ul class="links-user">
           <li><a href="#login">Login</a></li>
           <li><button>Sign Up</button></li>
@@ -78,45 +82,50 @@
   </section> <!-- statistics-->
 
   <section class="call-2">
-    <h2>Boost your links today</h2>
-    <button><a href="#get-started">Get Started!</a></button>
+    <div class="container">
+      <h2>Boost your links today</h2>
+      <button><a href="#get-started">Get Started!</a></button>
+    </div> <!-- container -->
   </section> <!-- call-2 -->
 
   <footer>
-    <div class="logo"><img src="images/logo.svg" alt="Shortly"></div>
-    <div class="links">
-      <div class="features">
-        <p>Features</p>
-        <ul>
-          <li><a href="#">Link Shortening</a></li>
-          <li><a href="#">Branded Links</a></li>
-          <li><a href="#">Analytics</a></li>
-        </ul>
-      </div> <!-- features -->
-      <div class="resources">
-        <p>Resources</p>
-        <ul>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Developers</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </div> <!-- resources -->
-      <div class="company">
-        <p>Company</p>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div> <!-- resources -->
-    </div> <!-- links -->
-    <div class="social-media">
-      <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
-      <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
-      <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
-      <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
-    </div> <!-- social-media -->
+    <div class="container">
+      <div class="logo"><img src="images/logo.svg" alt="Shortly"></div>
+      <div class="links">
+        <div class="features">
+          <p>Features</p>
+          <ul>
+            <li><a href="#">Link Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div> <!-- features -->
+        <div class="resources">
+          <p>Resources</p>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div> <!-- resources -->
+        <div class="company">
+          <p>Company</p>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div> <!-- resources -->
+      </div> <!-- links -->
+      <div class="social-media">
+        <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+        <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
+      </div> <!-- social-media -->
+    </div> <!-- container -->
+    
   </footer>
 </body>
 </html>
