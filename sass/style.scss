@@ -4,15 +4,142 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
 }
 
-$color-primary: #2DD0CF;
-$color-secondary: #2A2341;
+$color-primary: #3CC0CA;
+$color-secondary: #34313D;
+$color-third: #4B3F6B;
 $color-text: #232027;
 $color-support-1: #F0F1F6;
 $color-support-2: #ACACAE;
+$color-support-3: #9A9A9B;
 
-body {
-  background-color: $color-secondary;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 3%;
 }
+
+p, a {
+  color: $color-support-2;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+a {
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  color: $color-secondary;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.7rem;
+}
+
+button {
+  background: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 2.2rem;
+  border: none;
+  outline: 0;
+  border-radius: 2rem;
+  a {
+    width: 100%;
+    padding: 0.4rem;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+header {
+  margin-top: 2rem;
+  .menu-desktop, .area-logo, .links-info, .links-user {
+    display: flex;
+  }
+  .menu-desktop {
+    justify-content: space-between;
+    align-items: center;
+    .links-info {
+      margin-left: 2.5rem;
+      li:nth-child(2) {
+        margin: 0 2rem;
+      }
+    }
+    .links-user {
+      align-items: center;
+      li:nth-child(2) {
+        margin-left: 2rem;
+      }
+    }
+  }
+  .area-logo {
+    align-items: center;
+  }
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.call-1 {
+  margin-top: 5rem;
+  background: url('../images/illustration-working.svg');
+  background-position: 100% top;
+  background-repeat: no-repeat;
+  height: 70vh;
+  padding-top: 4rem;
+  button {
+    margin-top: 2rem;
+  }
+}
+
+.form {
+  position: relative;
+  top: 5rem;
+  > .container {
+    display: flex;
+    justify-content: center;
+    background: rgb(52,43,85);
+    background: linear-gradient(287deg, rgba(52,43,85,1) 0%, rgba(93,63,107,1) 100%);
+    border-radius: 0.5rem;
+    padding: 3rem;
+  }
+  form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  input {
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+  }
+  button {
+    width: 13%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.statistics {
+  background: $color-support-1;
+  padding-top: 10rem;
+}
+
+@import 'media-queries';
+
 
