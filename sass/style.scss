@@ -10,6 +10,7 @@
 
 $color-primary: #3CC0CA;
 $color-secondary: #34313D;
+$color-third: #4B3F6B;
 $color-text: #232027;
 $color-support-1: #F0F1F6;
 $color-support-2: #ACACAE;
@@ -92,11 +93,8 @@ header {
   }
 }
 
-section {
-  margin: 5rem;
-}
-
 .call-1 {
+  margin-top: 5rem;
   background: url('../images/illustration-working.svg');
   background-position: 100% top;
   background-repeat: no-repeat;
@@ -106,5 +104,42 @@ section {
     margin-top: 2rem;
   }
 }
+
+.form {
+  position: relative;
+  top: 5rem;
+  > .container {
+    display: flex;
+    justify-content: center;
+    background: rgb(52,43,85);
+    background: linear-gradient(287deg, rgba(52,43,85,1) 0%, rgba(93,63,107,1) 100%);
+    border-radius: 0.5rem;
+    padding: 3rem;
+  }
+  form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  input {
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+  }
+  button {
+    width: 13%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.statistics {
+  background: $color-support-1;
+  padding-top: 10rem;
+}
+
+@import 'media-queries';
 
 

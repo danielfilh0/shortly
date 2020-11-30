@@ -67,10 +67,8 @@ header {
   header .menu-mobile {
     display: none; }
 
-section {
-  margin: 5rem; }
-
 .call-1 {
+  margin-top: 5rem;
   background: url("../images/illustration-working.svg");
   background-position: 100% top;
   background-repeat: no-repeat;
@@ -78,5 +76,38 @@ section {
   padding-top: 4rem; }
   .call-1 button {
     margin-top: 2rem; }
+
+.form {
+  position: relative;
+  top: 5rem; }
+  .form > .container {
+    display: flex;
+    justify-content: center;
+    background: #342b55;
+    background: linear-gradient(287deg, #342b55 0%, #5d3f6b 100%);
+    border-radius: 0.5rem;
+    padding: 3rem; }
+  .form form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; }
+  .form input {
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: black; }
+  .form button {
+    width: 13%;
+    height: 100%;
+    border-radius: 0.5rem; }
+
+.statistics {
+  background: #F0F1F6;
+  padding-top: 10rem; }
+
+@media screen and (max-width: 900px) {
+  * {
+    font-size: 98%; } }
 
 /*# sourceMappingURL=style.css.map */
